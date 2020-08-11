@@ -1,0 +1,116 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #ff6c00;
+  --text-color-light-theme: #555555;
+  --text-color-dark-theme: #9da4bd;
+  --title-color-light-theme: #303030;
+  --title-color-dark-theme: #ffffff;
+  --title-font-size: 42px;
+  --text-font-size: 18px;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--text-color-light-theme);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle-dark-theme {
+  color: var(--text-color-dark-theme);
+}
+
+.subtitle-light-theme {
+  color: var(--text-color-light-theme);
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+}
+
+.text-dark-theme {
+  color: var(--text-color-dark-theme);
+}
+
+.text-light-theme {
+  color: var(--text-color-light-theme);
+}
+
+/* HEADER */
+.navigation-list-item-link,
+.header-tel-link,
+.modal-btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+}
+
+.navigation-list-item-link {
+}
+
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus {
+  color: var(--accent-color);
+}
+
+.header-tel-link {
+  text-transform: uppercase;
+}
+
+.modal-btn {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+}
+
+/* HERO */
+.social-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.2em;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-title {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 1.181;
+  letter-spacing: 0.05em;
+}
