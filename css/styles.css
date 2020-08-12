@@ -12,6 +12,18 @@
   --accent-color: #ff6c00;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--main-font);
   font-style: normal;
@@ -28,6 +40,11 @@ body {
 
 .address {
   font-style: normal;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
 }
 
 /* ================ COMPONENTS ================ */
@@ -86,6 +103,13 @@ body {
   line-height: 1.333;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -115,6 +139,38 @@ body {
 /* ================ END COMPONENTS ================ */
 
 /* ================ HEADER ================ */
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header .address {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.logo {
+  margin-right: 71px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .navigation-list-item-link,
 .header-tel-link {
   font-weight: 600;
