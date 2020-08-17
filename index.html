@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
@@ -16,7 +17,7 @@
     <header class="header">
         <div class="container header-container">
             <nav class="navigation">
-                <a class="link logo" href="./index.html" aria-label="логотип барбершопа">
+                <a class="link logo animate__wobble" href="./index.html" aria-label="логотип барбершопа">
                     <svg width="69" height="54">
                         <use href="./images/sprite.svg#logo"></use>
                     </svg>
@@ -39,12 +40,12 @@
             <address class="address">
                 <a class="link header-tel-link" href="tel:+380441111111">+38 044 111 11 11</a>
             </address>
-            <button class="modal-btn" type="button">онлайн-запись</button>
+            <button class="modal-btn modal-btn-dark-theme" type="button" data-modal-open>онлайн-запись</button>
         </div>
     </header>
     <main>
         <!-- HERO -->
-        <section class="hero">
+        <section class="hero animate__fadeInLeft">
             <div class="container hero-container">
                 <div class="hero-left-side">
                     <ul class="list social-links">
@@ -404,6 +405,13 @@
             </ul>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="form-wrapper">
+            <button class="form-wrapper-close-btn" type="button" data-modal-close>X</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

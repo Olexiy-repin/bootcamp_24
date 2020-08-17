@@ -54,6 +54,43 @@ img {
 }
 
 /* ================ COMPONENTS ================ */
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form-wrapper {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+}
+
+.form-wrapper-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 0px #ccc;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .section {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -140,10 +177,13 @@ img {
   padding-right: 20px;
   background-color: transparent;
   cursor: pointer;
+
+  transition: background-color 250ms linear;
 }
 
 .modal-btn-light-theme {
   color: var(--modal-btn-color-light-theme);
+  transition: all 250ms linear;
 }
 .modal-btn-dark-theme {
   color: var(--modal-btn-color-dark-theme);
@@ -152,6 +192,11 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
+}
+
+.modal-btn-light-theme:hover,
+.modal-btn-light-theme:focus {
+  color: #fff;
 }
 
 .social-links {
@@ -182,6 +227,9 @@ img {
   font-size: 11px;
   line-height: 1.364;
   letter-spacing: 0.2em;
+  color: #303030;
+
+  transition: color 250ms linear;
 }
 
 .social-link:hover,
@@ -206,11 +254,13 @@ img {
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
+  transition: background-color 250ms linear;
 }
 
 .social-list-item-svg {
   width: 20px;
   height: 20px;
+  transition: fill 250ms linear;
 }
 
 .social-list-item-link:hover {
@@ -225,6 +275,10 @@ img {
 
 /* ================ HEADER ================ */
 .header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -245,6 +299,7 @@ img {
 
 .logo {
   margin-right: 71px;
+  animation-duration: 2000ms;
 }
 
 .navigation-list {
@@ -262,6 +317,9 @@ img {
   font-size: 12px;
   line-height: 1.333;
   letter-spacing: 0.1em;
+  color: #fff;
+
+  transition: color 250ms linear;
 }
 
 .navigation-list-item-link {
@@ -291,6 +349,7 @@ img {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 1125px 680px;
+  animation-duration: 1000ms;
 }
 
 .hero-container {
@@ -298,7 +357,16 @@ img {
 }
 
 .hero-left-side {
+  display: flex;
+  align-items: flex-end;
   width: 100px;
+  padding-left: 26px;
+  padding-bottom: 40px;
+}
+
+.hero-left-side .social-links {
+  transform: rotate(-90deg);
+  transform-origin: left;
 }
 
 .hero-right-side {
@@ -472,11 +540,25 @@ img {
 }
 
 .advantages-list-item-number {
+  position: relative;
   font-weight: 700;
   font-size: 42px;
+  width: max-content;
   line-height: 1.357;
   letter-spacing: 0.05em;
   color: #303030;
+  margin: 0 auto;
+}
+
+.advantages-list-item-number::after {
+  position: absolute;
+  top: 6px;
+  right: -10px;
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #ff6c00;
 }
 
 .advantages-list-item-description {
