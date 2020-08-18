@@ -350,13 +350,37 @@
             </div>
         </section>
 
-        <div>
+        <div class="contact-wrapper">
             <!-- КОНТАКТНАЯ ФОРМА -->
-            <section></section>
+            <section class="section contact-form-section">
+                <div class="contact-form-section-wrapper">
+                    <h2 class="title title-dark-theme">Онлайн-запись</h2>
+                    <form action="#" class="contact-form">
+
+                        <div class="contact-form-field">
+                            <input type="text" name="user-name" id="user-name" class="contact-form-input" required
+                                placeholder=" ">
+                            <label for="user-name" class="contact-form-label">Имя*</label>
+                            <span class="contact-form-icon"></span>
+                        </div>
+
+                        <div class="contact-form-field">
+                            <input type="tel" name="user-phone" id="user-phone" class="contact-form-input" required
+                                placeholder=" ">
+                            <label for="user-phone" class="contact-form-label">Телефон*</label>
+                            <span class="contact-form-icon"></span>
+                        </div>
+
+                        <textarea name="user-message" class="contact-form-message" placeholder="сообщение"></textarea>
+
+                        <button type="submit" class="contact-form-btn contact-form-btn-dark-theme">отправить</button>
+                    </form>
+                </div>
+            </section>
 
             <!-- КОНТАКТЫ -->
-            <section class="section contact">
-                <h2 class="title">Контакты</h2>
+            <section class="section contact-section">
+                <h2 class="title title-dark-theme">Контакты</h2>
                 <ul class="list contact-list">
                     <li class="contact-list-item">
                         <address class="address">
@@ -387,7 +411,7 @@
                         </address>
                     </li>
                 </ul>
-                <p class="subtitle">время работы</p>
+                <p class="subtitle subtitle-dark-theme">время работы</p>
                 <p class="contact-date">Ежедневно с 9:00 до 22:00</p>
             </section>
         </div>
@@ -408,6 +432,19 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="form-wrapper">
             <button class="form-wrapper-close-btn" type="button" data-modal-close>X</button>
+            <h2 class="modal-form-title">Оставить заявку</h2>
+            <form action="#" class="modal-form">
+                <input type="text" name="user-name" class="modal-form-input" placeholder="Имя*" required>
+                <input type="tel" name="user-tel" class="modal-form-input" placeholder="Телефон*" required>
+                <textarea name="user-message" class="modal-form-message" placeholder="Сообщение"></textarea>
+
+                <input type="checkbox" name="user-policy" value="accept-policy" id="user-policy"
+                    class="modal-form-check-policy">
+                <label for="user-policy" class="modal-form-check-label">Я соглашаюсь с <a href="#"
+                        target="_blank">политикой
+                        конфиденциальности</a></label>
+                <button class="modal-form-btn">Отправить</button>
+            </form>
         </div>
     </div>
 
