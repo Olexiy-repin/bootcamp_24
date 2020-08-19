@@ -1,0 +1,84 @@
+/* ================ CONTACT FORM ================ */
+.contact-form-section {
+  width: 51.172%;
+  padding-left: 56px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.contact-form-section-wrapper {
+  width: 560px;
+}
+
+.contact-wrapper {
+  display: flex;
+  background-color: #191c26;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-form-field {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.contact-form-label {
+  position: absolute;
+  top: 0;
+  left: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  color: rgba(157, 164, 189, 0.4);
+  transition: all 250ms linear;
+
+  .contact-form-input:focus + &,
+  .contact-form-input:not(:placeholder-shown) + & {
+    transform: translateY(-30px);
+    color: #fff;
+  }
+}
+
+.contact-form-input {
+  @extend %contact-form-area;
+  width: 270px;
+  height: 24px;
+  padding-left: 32px;
+}
+
+.contact-form-message {
+  @extend %contact-form-area;
+  width: 100%;
+  height: 76px;
+  resize: none;
+  margin-bottom: 44px;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+  }
+}
+
+.contact-form-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: orange;
+
+  .contact-form-input:focus ~ &,
+  .contact-form-input:not(:placeholder-shown) ~ & {
+    background-color: turquoise;
+  }
+}
+
+/* ================ END CONTACT FORM ================ */

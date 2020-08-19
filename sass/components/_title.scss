@@ -1,0 +1,28 @@
+.title {
+  font-family: $main-font;
+  @include font($title-font-size, 700, 1.167);
+  letter-spacing: 0.05em;
+
+  .about-right-side &,
+  .advantages-right-side & {
+    margin-bottom: 20px;
+  }
+
+  .services &,
+  .masters & {
+    margin-bottom: 44px;
+  }
+
+  .contact-form-section &,
+  .contact-section & {
+    margin-bottom: 40px;
+  }
+}
+
+.title-dark-theme {
+  color: $title-color-dark-theme;
+}
+
+.title-light-theme {
+  color: $title-color-light-theme;
+}

@@ -1,0 +1,61 @@
+/* ================ CONTACT ================ */
+.contact-section {
+  width: 48.828%;
+  background-image: url("../images/contact/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 100px;
+}
+
+.contact-list-link,
+.contact-date {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-list-link-svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  margin-top: 6px;
+}
+
+.contact-list {
+  margin-bottom: 70px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-form-btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.contact-form-btn-dark-theme {
+  color: $modal-btn-color-dark-theme;
+}
+
+/* ================ END CONTACT ================ */

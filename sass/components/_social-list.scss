@@ -1,0 +1,33 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 250ms linear;
+
+  &:hover {
+    background-color: #000;
+  }
+}
+
+.social-list-item-svg {
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms linear;
+
+  .social-list-item-link:hover & {
+    fill: $accent-color;
+  }
+}

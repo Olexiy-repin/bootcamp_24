@@ -1,0 +1,47 @@
+/* ================ HEADER ================ */
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  .address {
+    margin-left: auto;
+    margin-right: 40px;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
+.logo {
+  margin-right: 71px;
+  animation-duration: 2000ms;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation-list-item-link {
+  @extend %header-links;
+}
+
+.header-tel-link {
+  @extend %header-links;
+  text-transform: uppercase;
+}
+/* ================ END HEADER ================ */
