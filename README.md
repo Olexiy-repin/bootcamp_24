@@ -1,30 +1,8 @@
 # bootcamp_24
 
-1.  что такое веб(frontend, backend), клиент-серверная архитектура
-2.  теги:
-
-    - типы (
-      теги верхнего уровня;
-      теги заголовка документа;
-      блочные элементы;
-      строчные элементы;
-      универсальные элементы;
-      списки;
-      таблицы;
-      );
-    - парные и одинарные;
-    - сестринские и вложеные;
-    - атрибуты;
-    - основные теги и семантика (
-      Metadata content;
-      Flow content;
-      Sectioning content;
-      Heading content;
-      Phrasing content;
-      Embedded content;
-      Interactive content;
-      );
-
-3.  инструменты разработчика devtools
-4.  абсолютные и относительные пути
-5.  Валидация
+1. поговорить про изображения (контентные, декоративные);
+2. background и его свойства (image, position, size, repeat, clip, attachment);
+3. псевдоэлементы (::before, ::after);
+4. градиент (linear, radial);
+5. тени (box-shadow, text-shadow);
+6. svg и способы подключения;

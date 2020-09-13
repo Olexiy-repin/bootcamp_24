@@ -1,0 +1,48 @@
+/* ================ MASTERS ================ */
+.masters {
+  background-color: #f7f7f7;
+}
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.masters-list-item-footer {
+  padding-top: 30px;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+.masters-list-item {
+  margin-right: 30px;
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.masters-list-item-name {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.389;
+  letter-spacing: 0.02em;
+  color: #303030;
+  margin-bottom: 8px;
+}
+
+.masters-list-item-position {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.357;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+  margin-bottom: 30px;
+}
+
+/* ================ END MASTERS ================ */

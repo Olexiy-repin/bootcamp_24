@@ -1,0 +1,22 @@
+/* ================ ABOUT ================ */
+.about-container {
+  display: flex;
+}
+
+.about-gallery {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-gallery-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.857;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+}
+/* ================ END ABOUT ================ */
